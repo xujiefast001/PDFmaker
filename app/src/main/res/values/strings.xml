@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PDFmaker</string>
+    <string name="button_1">生成pdf</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="user_input">请输入用户名</string>
+    <string name="psw_input">请输入密码</string>
+    <string name="login">登入</string>
+</resources>

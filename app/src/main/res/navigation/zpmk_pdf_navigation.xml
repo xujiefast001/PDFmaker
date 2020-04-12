@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/zpmk_pdf_navigation"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.pdfmaker.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_ztFragment"
+            app:destination="@id/ztFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_mangeFragment2"
+            app:destination="@id/mangeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mangeFragment"
+        android:name="com.example.pdfmaker.MangeFragment"
+        android:label="fragment_mange"
+        tools:layout="@layout/fragment_mange" >
+        <action
+            android:id="@+id/action_mangeFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ztFragment"
+        android:name="com.example.pdfmaker.ZtFragment"
+        android:label="fragment_zt"
+        tools:layout="@layout/fragment_zt" >
+        <action
+            android:id="@+id/action_ztFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.pdfmaker.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_twoPpageFragment"
+            app:destination="@id/twoPpageFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_onePpageFragment"
+            app:destination="@id/onePpageFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_ztFragment"
+            app:destination="@id/ztFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/onePpageFragment"
+        android:name="com.example.pdfmaker.OnePpageFragment"
+        android:label="fragment_one_ppage"
+        tools:layout="@layout/fragment_one_ppage" >
+        <action
+            android:id="@+id/action_onePpageFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/twoPpageFragment"
+        android:name="com.example.pdfmaker.TwoPpageFragment"
+        android:label="fragment_two_ppage"
+        tools:layout="@layout/fragment_two_ppage" >
+        <action
+            android:id="@+id/action_twoPpageFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+</navigation>
