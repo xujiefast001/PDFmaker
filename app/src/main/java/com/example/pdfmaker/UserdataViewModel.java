@@ -9,10 +9,10 @@ import androidx.lifecycle.LiveData;
 import java.util.List;
 
 
-public class UserViewModel extends AndroidViewModel {
+public class UserdataViewModel extends AndroidViewModel {
     private UserRepository userRepository;
     private LiveData<List<User>> alluser;
-    public UserViewModel(@NonNull Application application) {
+    public UserdataViewModel(@NonNull Application application) {
         super(application);
         userRepository=new UserRepository(application);
         alluser=userRepository.getAlluser();
